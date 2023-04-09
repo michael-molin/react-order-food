@@ -8,9 +8,9 @@ type Props = {
 function CategorySelection({title, image, handlerClick} : Props)
 {
     return (
-        <div onClick={() => handlerClick(title)} className={style.body} style={{backgroundImage:`url(${image})`}}>
+        <a href="javascript:void(0);" onClick={() => handlerClick(title)} className={style.body} style={{backgroundImage:`url(${image})`}}>
             {title}
-        </div>
+        </a>
     )
 }
 

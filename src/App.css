@@ -1,11 +1,12 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-body {
-  background-color: #282c34;
-  min-height: calc(100vh - 1.82em);
+  min-height: calc(100vh - 3.4em);
   display: flex;
+  position:relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -15,6 +16,16 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Return-main-menu {
+  font-size: .8em;
+  margin: 1em 0;
+}
+
+.Return-main-menu a{
+  color:white;
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {

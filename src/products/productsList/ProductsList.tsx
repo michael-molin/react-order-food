@@ -5,10 +5,12 @@ import style from "./ProductsList.module.css";
 
 function ProductsList({list}: ProductListInterface) {
     return (
-        <div className={style.body}>
-            {list.map((product : ProductInterface) => (
-                <Product key={product.id} id={product.id} price={product.price} image={product.image} description={product.description} name={product.name} />
-            ))}
+        <div>
+            <div className={style.body}>
+                {list.map((product : ProductInterface) => (
+                    <Product key={product.id} id={product.id} price={product.price} image={product.image} description={product.description} name={product.name} />
+                ))}
+            </div>
         </div>
     )
 }

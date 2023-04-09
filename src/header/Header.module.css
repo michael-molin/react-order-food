@@ -1,7 +1,12 @@
 .header {
-    padding: 1em;
+    padding: 1.5em 2em;
+    margin: auto;
     background-color:white;
     display:flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+}
+
+.header_element {
+    width: 8em;
 }

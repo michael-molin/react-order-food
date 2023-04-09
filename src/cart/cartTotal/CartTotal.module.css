@@ -9,6 +9,6 @@
 }
 
 .cartInfo {
-    padding-left: 15px;
-    display:block;
+    display:flex;
+    flex-direction: column;
 }

@@ -13,8 +13,12 @@ function CartTotal() {
     return (
         <div className={style.cartHeader}>
             <div className={style.cartInfo}>
-                Items: {cartItems} <br />
-                Total Price: {total} €
+                <div>
+                    Items: {cartItems}
+                </div>
+                <div>
+                    Total Price: {total.toFixed(2)} €
+                </div>
             </div>
         </div>
     )
