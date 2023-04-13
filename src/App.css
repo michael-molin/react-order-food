@@ -4,14 +4,25 @@
 }
 
 .App-body {
-  min-height: calc(100vh - 3.4em);
+  min-height: calc(100vh - 4em);
   display: flex;
   position:relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2em;
   color: white;
+}
+
+.return-to-main-menu {
+  height: 1em;
+  margin: 1em 0;
+  font-size: .8em;
+}
+
+.return-to-main-menu a {
+  text-decoration: none;
+  color:white;
 }
 
 .App-link {

@@ -30,16 +30,19 @@ function App() {
     setCategory(selectedCategory)
   }
 
-  const returnToMenu = <div className="Return-main-menu">
+  const returnToMenu =
       <a href="javascript:void(0);" onClick={ () =>selectedCategory('noList')}>Return to Main Menu</a>
-  </div>
+
 
   return (
     <div className="App">
       <CartProvider>
         <Header />
-          {category !== 'noList' && returnToMenu}
+          <div className="return-to-main-menu">
+              {category !== 'noList' && returnToMenu}
+          </div>
         <div className="App-body">
+
           {category === 'noList' && productsList.map(product => (
               <CategorySelection key={product.id} title={product.title} image={product.image} handlerClick={selectedCategory} />
           ))}

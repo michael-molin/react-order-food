@@ -17,7 +17,7 @@ function CartTotal() {
                     Items: {cartItems}
                 </div>
                 <div>
-                    Total Price: {total.toFixed(2)} €
+                    Total: {total.toFixed(2)} €
                 </div>
             </div>
         </div>
